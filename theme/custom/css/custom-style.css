@@ -1,0 +1,26 @@
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+.card,
+.card-header,
+.card-footer {
+	color: #ffffff;
+	background-color: #15EDA3;
+	border: none;
+}
+
+select,
+.form-control {
+	color: #127780;
+}
+
+.btn-color {
+	color: #ffffff;
+	background-color: #127780;
+}
+
+/* .card-header {
+	border: none;
+	background-color: #15EDA3;
+} */
