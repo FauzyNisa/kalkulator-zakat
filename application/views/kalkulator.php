@@ -7,57 +7,11 @@
 					<h3 class="pt-3">Kalkulator Zakat</h3>
 				</div>
 				<div class="card-body">
-
-					<div class="form-group">
-						<h6 class="card-title text-left">Jenis Zakat</h6>
-						<select id="selectZakat" class="custom-select form-control pb">
-							<option value="">-- Jenis Zakat --</option>
-							<option value="1">Zakat Maal</option>
-							<option value="2">Zakat Penghasilan</option>
-						</select>
-					</div>
-					<div id="maal">
-						<form action="">
-							<div class="form-group">
-								<h6 class="card-title text-left">Nilai emas, perak, dan/atau permata</h6>
-								<input type="number" class="form-control" id="emasperak">
-							</div>
-							<div class="form-group">
-								<h6 class="card-title text-left">Uang tunai, tabungan, deposito</h6>
-								<input type="number" class="form-control" id="uangtabungan">
-							</div>
-							<div class="form-group">
-								<h6 class="card-title text-left">Kendaraan, rumah, aset lain</h6>
-								<input type="number" class="form-control" id="kendaraanrumah">
-							</div>
-							<div class="form-group">
-								<h6 class="card-title text-left">Jumlah hutang/cicilan (optional)</h6>
-								<input type="number" class="form-control" id="hutang">
-							</div>
-						</form>
-					</div>
-					<div id="penghasilan">
-						<form action="">
-							<div class="form-group">
-								<h6 class="card-title text-left">Jumlah pendapatan per bulan</h6>
-								<input type="number" class="form-control" id="emasperak">
-							</div>
-							<div class="form-group">
-								<h6 class="card-title text-left">Bonus, THR dan lainnya</h6>
-								<input type="number" class="form-control" id="uangtabungan">
-							</div>
-						</form>
-					</div>
-
+					<h5>Silahkan pilih</h5>
+					<a href="<?php echo site_url('kalkulator/maal') ?>" class="btn btn-color">Zakat Maal</a>
+					<a href="<?php echo site_url('kalkulator/penghasilan') ?>" class="btn btn-color">Zakat Penghasilan</a>
 				</div>
-
-				<div class="card-footer">
-					<a href="#" class="btn btn-color">Hitung Zakat</a>
-					<div class="mt-3">
-						<h5 class="card-titlet">Hasil</h5>
-						<input class="form-control" type="text" placeholder="0" readonly>
-					</div>
-				</div>
+				<br>
 			</div>
 		</div>
 	</div>

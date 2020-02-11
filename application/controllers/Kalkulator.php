@@ -25,4 +25,25 @@ class kalkulator extends CI_Controller
 
 		$this->load->view('kalkulator', $data);
 	}
+
+	public function maal()
+	{
+		$data['title'] = "Zakat Maal";
+
+		$this->load->view('zakat_maal', $data);
+	}
+
+	public function penghasilan()
+	{
+		$data['title'] = "Zakat Penghasilan";
+
+		$this->load->view('zakat_penghasilan', $data);
+	}
+
+	public function contoh()
+	{
+		$data['title'] = "Contoh";
+
+		$this->load->view('contoh', $data);
+	}
 }
