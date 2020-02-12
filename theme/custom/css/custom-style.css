@@ -14,10 +14,6 @@ body {
 	color: #ffffff;
 }
 
-select,
-.form-control {
-	color: #127780;
-}
 
 .btn-color {
 	color: #ffffff;
@@ -28,3 +24,12 @@ select,
 	border: none;
 	background-color: #15EDA3;
 } */
+.nav-item a{
+	border-radius: 0.5rem;
+	color: #127780;
+	background-color: none;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+	background-color: #127780;
+}
