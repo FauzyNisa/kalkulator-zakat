@@ -53,7 +53,7 @@
 		}
 
 		var total = 0.025 * harta;
-		document.Kalkulator.zakatp.value = total;
+		document.Kalkulator.zakatp.value = rupiah(total);
 
 	}
 </script>

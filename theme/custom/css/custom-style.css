@@ -27,7 +27,7 @@ body {
 .nav-item a{
 	border-radius: 0.5rem;
 	color: #127780;
-	background-color: none;
+	background-color: #ffffff;
 }
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
