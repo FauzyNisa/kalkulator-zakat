@@ -4,6 +4,15 @@
 <script src="<?php echo base_url('theme/bootstrap/css/bootstrap.bundle.js') ?>"></script>
 
 <script language="JavaScript" type="text/javascript">
+	/* Fungsi formatRupiah */
+	function rupiah(angka) {
+		var rupiah = '';
+		var angkarev = angka.toString().split('').reverse().join('');
+		for (var i = 0; i < angkarev.length; i++)
+			if (i % 3 == 0) rupiah += angkarev.substr(i, 3) + '.';
+		return 'Rp. ' + rupiah.split('', rupiah.length - 1).reverse().join('');
+	}
+
 	function maal() {
 		var tharta =
 			parseInt(document.Kalkulator.emasperak.value) +
@@ -20,7 +29,8 @@
 		}
 
 		var total = 0.025 * harta;
-		document.Kalkulator.zakatm.value = total;
+		document.Kalkulator.zakatm.value = rupiah(total);
+
 
 	}
 

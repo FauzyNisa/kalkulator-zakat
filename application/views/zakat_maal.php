@@ -31,7 +31,7 @@
 						<br>
 						<div class="mt-3">
 							<h5 class="card-titlet">Hasil</h5>
-							<input class="form-control" type="number" name="zakatm" placeholder="0" value="0" readonly="readonly">
+							<input class="form-control" type="text" name="zakatm" placeholder="0" value="0" readonly="readonly">
 						</div>
 						<br>
 					</div>
