@@ -5,11 +5,9 @@
 	<div class="row">
 		<div class="col-auto mx-auto">
 			<div class="card rounded text-center">
-				<div class="card-header">
-					<h3 class="pt-3">Kalkulator Zakat</h3>
-				</div>
 				<form action="" method="post" name="Kalkulator" id="Kalkulator">
 					<div class="card-body">
+						<h3 class="pt-3 mb-4">Kalkulator Zakat</h3>
 
 						<div class="container">
 							<!-- Nav tabs -->

@@ -2,6 +2,7 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="<?php echo base_url('theme/bootstrap/js/bootstrap.js') ?>"></script>
 <script src="<?php echo base_url('theme/bootstrap/js/bootstrap.bundle.js') ?>"></script>
+
 <!-- dynamic tab -->
 <script>
 	$(document).ready(function() {
@@ -10,6 +11,7 @@
 		});
 	});
 </script>
+
 <script language="JavaScript" type="text/javascript">
 	/* Fungsi formatRupiah */
 	function rupiah(angka) {
@@ -21,6 +23,16 @@
 	}
 
 	function maal() {
+		if (document.Kalkulator.emasperak.value == '') {
+			document.Kalkulator.emasperak.value = 0
+		} else if (document.Kalkulator.uangtabungan.value == '') {
+			document.Kalkulator.uangtabungan.value = 0
+		} else if (document.Kalkulator.kendaraanrumah.value == '') {
+			document.Kalkulator.kendaraanrumah.value = 0
+		} else if (document.Kalkulator.hutang.value == '') {
+			document.Kalkulator.hutang.value = 0
+		}
+
 		var tharta =
 			parseInt(document.Kalkulator.emasperak.value) +
 			parseInt(document.Kalkulator.uangtabungan.value) +
@@ -36,12 +48,20 @@
 		}
 
 		var total = 0.025 * harta;
+		total = parseInt(total)
 		document.Kalkulator.zakatm.value = rupiah(total);
 
 
 	}
 
 	function penghasilan() {
+
+		if (document.Kalkulator.pendapatan.value == '') {
+			document.Kalkulator.pendapatan.value = 0
+		} else if (document.Kalkulator.bonus.value == '') {
+			document.Kalkulator.bonus.value = 0
+		}
+
 		var harta =
 			parseInt(document.Kalkulator.pendapatan.value) +
 			parseInt(document.Kalkulator.bonus.value);
@@ -53,6 +73,7 @@
 		}
 
 		var total = 0.025 * harta;
+		total = parseInt(total)
 		document.Kalkulator.zakatp.value = rupiah(total);
 
 	}
